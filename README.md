@@ -1,3 +1,3 @@
 # LeetCode
 
-#### All problems i have ever solved in LeetCode
+#### All problems i have solved in LeetCode
