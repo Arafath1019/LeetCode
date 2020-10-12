@@ -34,3 +34,29 @@ class Solution:
                 node = node.next
                 temp -= 1
             return node
+
+
+
+# Solution-02
+
+class Solution1:
+    def middleNode(self, head: ListNode) -> ListNode:
+        
+        slow = head
+        fast = head
+        
+        while(fast.next and fast.next.next):
+            slow = slow.next
+            fast = fast.next.next
+        
+        temp = head
+        count = 0
+        while(temp):
+            count += 1
+            temp = temp.next
+        
+        if(count%2==0):
+            return slow.next
+        else:
+            return slow
+        
